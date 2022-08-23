@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Capítulo 10 Aula 01</title>
+</head>
+<body>
+    <h1>Links e âncoras em HTML5</h1>
+    <h2>Usando links externos</h2>
+    <p>Usado para levar a sites que não são os nossos. Para isso usamos a tag &lt;a&gt; <br>
+    seguido de <abbr title="Hypertext Reference">href</abbr>, contendo o link entre
+    aspas. Como no exemplo abaixo:</p>
+    <a href="https://www.youtube.com/watch?v=LeOVXQDsAIY" target="_blank" rel="external">Link da videoaula</a>
+    <p>Deixando o href como padrão o usuario arbira o novo link e fechara o seu, <br>
+    porém adicionando à tag href outros dois parametros (target e rel) o usuario <br>
+    o novo link vai abrir em uma nova aba do navegador, posibilitando que o usuario <br>
+    volte para o seu site. Veja os exemplos abaixo:</p>
+    <a href="https://google.com">href sem target e rel</a> <br>
+    <img src="imagens/google sem target rel.png" alt="google sem target rel"> <br>
+    <a href="https://google.com" target="_blank" rel="external">href com target e rel</a> <br>
+    <img src="imagens/google target rel.png" alt="google target rel">
+    <h2>Usandos links internos</h2>
+    <p>Usado para levar a links dentro do nosso site. A formação do codigo é igual <br>
+    aos links externos, porém os links são a localização dos arquivos dentro da  <br>
+    mesma pasta ou URL do anterior. É possivel definir com o <EM>rel</EM> a sequencia de  <br>
+    visualização das paginas usando <em>rel="next"</em> ou <em>rel="prev"</em> veja o exemplo:</p>
+    <img src="imagens/rel next.png" alt="rel next"> <br>
+    <hr>
+    <p style="text-align: end;"><a href="cap10parte02.html" rel="next">Clicando aqui voce irá para a parte 02 do capítulo 10</a> <br></p>
+</body>
+</html>

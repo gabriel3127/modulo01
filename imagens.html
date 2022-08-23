@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Imagens</title>
+</head>
+<body>
+    <h1>Como trabalhar com diferentes mídias no HTML5</h1>
+    <h1>Imagens</h1>
+    <h2>Imagens Dinâmicas</h2>
+    <h3>Criando imagens de tamanhos diferentes</h3>
+    <p>Usando o GIMP é possível criar ou alterar imagens de tamanhos diferentes,<br>
+    para ser compatível com os diferentes aparelhos(celular,tablet,computador,etc...), <br>
+    para mais informações do processo de edição conferir o video do cap 11 aula 01</p>
+    <a href="https://www.youtube.com/watch?v=E01LDVj0Rpg&t=694s">Capítulo 11 aula 01 - Imagens Dinâmicas</a>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente altere o <br>
+    tamanho da página no seu navegador. OBS: usando o dev tools é possível mudar <br>
+    o despositivo de visualização.</p>
+    <p>a tag &lt;picture&gt; permite que se crie várias fontes para as imagens, podendo o <br>
+    navegador determinar qual imagem deve aparecer de acordo com o tamanho <br>
+    da exibição.</p>
+    <p>Para isso é necessario que se adicione a tag &lt;source&gt; ao picture, fazendo com <br>
+    que o navegador entenda que se o tamanho da tela for menor do que o determinado <br>
+    pelo <em>media</em> o proprio navegador vai exibir a outra imagem.</p>
+    <img src="imagens/imagesource.png" alt="image source"> <br>
+    <picture>
+        <source media="(max-width: 700px)" srcset="imagens/bateu.png" type="image/png">
+        <source media="(max-width: 1000px)" srcset="imagens/berolaviagem.png" type="image/png">
+        <img src="imagens/berolabanheira.jpg" alt="imagem flexível">
+    </picture>
+    <hr>
+    <p style="text-align: end;">
+        <a href="index.html">Voltar para a pagína inicial do módulo 01</a> <br>
+        <a href="audio.html">Siga para o capítulo 11 parte 02 : Áudio</a>
+    </p>
+</body>
+</html>

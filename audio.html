@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Áudio</h1>
+    <h2>Como colocar medias de áudio no seu site</h2>
+    <p>Primeiramente é preciso tomar cuidado com direitos autorais mesmo nos arquivos de áudio, <br>
+    é possível buscar áudios sem diretos autorais no <a href="https://studio.youtube.com/channel/UCy6PyM3bW2JnqPVigzjoNvQ/music">Youtube studio</a>
+    , sendo necessario somente <br>uma conta no Youtube. Devemos ficar atentos tambem ao tamanho dos audios que usamos <br>
+    , porque áudios muito grandes vão deixar o carregamento lento diminuindo a experiencia do <br>
+    usúario.</p>
+    <p>Para colocar áudios no HTML5 é necessario usar a tag abaixo: <br>
+    <br>
+    &lt;audio src="media.mp3" controls outoplay&gt;&lt;/audio&gt; <br>
+    <br>
+    OBS : Esta é um pouco limitada podendo causar problemas na reprodução dos arquivos.</p>
+    <p>A maioria dos navegadores tem compatibilidade com arquivos MP3 WAV OGG, podendo <br>
+    ainda assim ocorrer problemas na reprodução dos seus arquivos.</p>
+    <p>Para que a compatibilidade ocorra melhor usar:</p> 
+    <audio preload="auto" autoplay controls loop>
+        <source src="media/YourLove-YungLogos.mp3" type="audio/mpeg">
+        <source src="media/YourLove-YungLogos.mp3" type="audio/ogg">
+        <source src="media/YourLove-YungLogos.mp3" type="audio/wav">
+        <p>Infelizmente seu navegador não é capaz de reproduzir áudio.
+        <a href="media/YourLove-YungLogos.mp3">Clique aqui para fazer o download do arquivo </a></p>
+    </audio>
+    <br>
+    <img src="imagens/mediaaudio.png" alt="mediaaudio.png">
+    <p>No caso dessa tag o carregamento é realizado de cima para baixo. <br>
+    Evite usar arquivos WAV pois são muito pesados, apesar da boa qualidade. <br>
+    O uso dos parametros é muito importante sendo seus nomes autoexplicativos : <br>
+    <em>autoplay controls loop</em></p>
+    <hr>
+    <p style="text-align: end;">
+        <a href="imagens.html">Volte para a parte 01</a> <br>
+        <a href="videos.html">Siga para o capítulo 11 parte 03 : Vídeos</a>
+    </p>
+</body>
+</html>

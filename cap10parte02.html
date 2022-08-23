@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Links e âncoras em HTML5 parte 02</h1>
+    <h2>Usando links internos</h2>
+    <h1>Bem-vindo a segunda parte do capítulo 10</h1>
+    <a href="cap10aula01e02.html" rel="prev">Clicando aqui voce voltara para a parte 1</a> <br>
+    <img src="imagens/rel prev.png" alt="rel prev">
+    <h2>Links que não tem a sua confiança</h2>
+    <p>Existe um <em>rel</em> para links dos quais voce não tem total confiança. o <em>rel="nofollow"</em> <br>
+    como no exemplo abaixo:</p>
+    <a href="http://google.com" target="_blank" rel="nofollow">exemplo de nofollow usando o google.com</a> <br>
+    <img src="imagens/nofolow.png" alt="google nofollow">
+    <p>Para o usuario não muda nada, mas o mecanismo de busca não vai indexar o seu <br>
+    site com o link que nao tem a sua total confiança. Alguns anunciantes pedem que <br>
+    não se use o <em>nofollow</em>.</p>
+    <h2>Links em locais diferentes</h2>
+    <a href="imagens/exemplolink.html" target="_self">Exemplo link em local diferente</a>
+    <h2>Links para download</h2>
+    <p>Para fazer com que um arquivo seja baixado do seu site é possivel usar &lt;a href&gt; <br>
+    colocando como referencia a localização do arquivo. Para que navegador enten-<br>
+    da que é para ser feito o download, dois parametros devem ser adicionados, <br>
+    <em>download</em> e <em>type="media types que podem ser encontrados no link abaixo."</em> <br>
+    Veja as imagens demonstrativas:</p>
+    <ul>
+        <li><a href="imagens/pagina de teste download.pdf" >Pagina do download para visualização</a></li> <br>
+        <li><a href="imagens/pagina de teste download.rar" download="imagens/pagina de teste download.rar" 
+            type="application/zip">Link para o download zipado do conteúdo</a></li>
+    </ul>
+    <img src="imagens/download.png" alt="download.png">
+    <p>Os media types podem ser encontrados em : <a href="https://www.iana.org/assignments/media-types/media-types.xhtml" 
+        target="_blank" rel="external">Iana.org/assignments</a></p>
+    <h2>Disafios propostos pelo professor</h2>
+    <p>Sigua o link que vai para o desafio</p>
+    <a href="https://www.youtube.com/watch?time_continue=160&v=suL56Mdx22Y&feature=emb_title" target="_blank" rel="external">Video aula explicativa do desafio</a> <br>
+    <a href="imagens/desafiocap10.html">Desafio capítulo 10</a>
+    <hr>
+    <h1 style="text-align: end;">Fim do capítulo</h1>
+    <p style="text-align: end;">
+        <a href="index.html">Voltar para a pagína inicial do módulo 01</a> <br>
+        <a href="imagens.html" rel="next">Siga para o capítulo 11 parte 01</a>
+    </p>
+</body>
+</html>

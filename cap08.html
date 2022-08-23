@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Capítulo 08</title>
+</head>
+<body>
+    <h1>Semantica do HTML 5</h1>
+    <p>O HTML5 se reserva a semantica, o significado das palavras e tags, <br>
+    deixando a forma ou estilo para a CSS</p>
+    <p>Algumas tags obsoletas foram descontinuadas do HTML5 <br>
+    Podendo ser encontradas em <a href="https://www.w3.org/TR/2014/REC-html5-20141028/obsolete.html" target="_blank" rel="external">W3C.org</a></p>
+    <h2>Formatação de textos</h2>
+    <h3>Principais formatações</h3>
+    <h3>Negrito / Destaque</h3>
+    <p>Nessa frase temos um <b>termo em negrito</b> usando a tag &lt;b&gt; (semântica)</p>
+    <p>Nessa frase temos um <strong>termo em destaque</strong> usando a tag &lt;strong&gt; (não semântica)</p>
+    <h3>Itálico / Ênfase</h3>
+    <p>Nessa frase, temos um <i>termo em itálico</i> usando a tag &lt;i&gt; (não semantica) </p>
+    <p>Nesta frase, temos um termo em Ênfase usando a tag &lt;EM&gt; (semantico)</p>
+    <p><strong>
+        Importante saber que visualmente não a mudança entre Negrito/destaque e Itálico/Ênfase
+        ,porêm para o html existe diferença semantica entre os termos. <br>
+        Outro observação importante é que as tags &lt;strong&gt; e &lt;EM&gt; são mais novas, enquanto
+        &lt;b&gt; e &lt;i&gt; eram usadas no HTML4 e podem se tornar oboletas.
+    </strong></p>
+    <h2>Formatações adicionais em HTML5</h2>
+    <h3>Texto marcado</h3>
+    <p>Podemos criar tambem <mark>um texto marcado</mark> usando a tag &lt;mark&gt;. <br>
+    A cor da marcação é feita por css e não html.</p>
+    <p>para mudar a cor da marcação usar css: <br>
+    <mark style="background-color:rgb(255, 4, 4)">ESSE TEXTO FOI MARCADO E A COR FOI ALTERADA</mark> usando style= "background-color":"*cor" <br>
+    tudo feito no primeiro mark. Dessa maneira devera ser alterada cada mark de um em um. <br>
+    Caso precise que varias marcações tenham a mesma cor, é necessario mudar o head,  <br>
+    definindo uma cor para todos eles, assim como na imagem abaixo:</p>
+    <img src="imagens/mark style.png" alt="mark style.png">
+    <p>As marcações que forem alteradas manualmente ficam com a nova cor da tag</p>
+    <h3>Textos grandes e pequenos</h3>
+    <p>Este é um <big>texto grande</big>, usando a tag &lt;big&gt;, não faz sentido usar letras
+    grandes por isso o W3C desconsiderou a tag &lt;big&gt;.</p>
+    <p>enquanto isso <small>textos pequenos</small> ainda se mantem relevantes por serem usados em 
+    uma serie de <br>documentos. Para serem feitos usamos a tag &lt;small&gt;</p>
+    <h3>Texto deletado</h3>
+    <p>Podemos marcar um <del>texto como exluído</del> para indicar que ele deve ser lido, mas não considerado. <br>
+    Para isso usamos a tag &lt;del&gt;.</p>
+    <h3>Texto inserido</h3>
+    <p>Podemos também marcar um texto com inserido para dar uma ênfase e indicar que ele foi adicionado depois.
+    Para isso usasse a tag &lt;ins&gt;.</p>
+    <p>Existe também o <u>texto sublinhado</u> usando a tag &lt;u&gt;. (não semântica) <br>
+    Tendo a mesma caracteristica visual de &lt;ins&gt; o &lt;u&gt; sendo não semantica está perdendo o uso.</p>
+    <h3>Texto sobrescrito</h3>
+    <p>Usado para colocar partes do texto para cima, usasse a tag &lt;sup&gt;. Como em x<sup>20</sup>+3.</p>
+    <h3>Texto subscrito</h3>
+    <p>Usado para colocar partes do texto para baixo, usasse a tag &lt;sub&gt;. Como em H<SUB>2</SUB>O.</p>
+    <h2>Outras formatações</h2>
+    <h3>Código-fonte / Pré-formatação</h3>
+    <p>O comando <code>document.getElementById('teste')</code> é escrito em linguagem JavaScript.</p>
+    <p>Usando a tag &lt;code&gt; é possivel dar o mesmo espaço lateral para as letras, deixando <br>
+    visualmente mais atraente a demosntração de códigos no seu site.</p>
+    <p>Como novamente no exemplo abaixo: <br>
+        &lt;code&gt;document.getElementById('teste')&lt;/code&gt;</p>
+    <p>Como no exemplo mostrado abaixo, a tag &lt;code&gt; não preserva a identação, sendo necessario <br>
+    a utilização de uma outra tag &lt;pre&gt; mantendo a maneira como o texto foi escrito.</p>
+    <p>Uma dica é que o espaçamento pode ser reduzido usand <strong>Shift + Tab</strong> </p>
+    <pre>
+        <code>
+            num = int(input('Digite um número'))
+            if num % 2 == 0:
+                print(f'O número {num} é PAR')
+            else:
+                print(f'O número {num} é ÍMPAR')
+            print('Fim do programa')
+        </code>
+    </pre>
+    <img src="imagens/pre code tag.png" alt="pre code tag">
+    <h3>Citações</h3>
+    <p>A tag &lt;q&gt; é usada quando precisa usar uma citação <br>
+    Exemplo: Como diria o pai de um amigo: <q>O computador é um burro muito rapido</q></p>
+    <p>Pode ser usado também uma &lt;Blockquote&gt;, um pouco maior que a &lt;q&gt;, podendo também <br>
+    colocar o link para o autor original, usando cite="URL DO ARQUIVO ORIGINAL"</p>
+    <BLOCKquote cite="https://twitter.com/PedroLulaMota/status/1558968463665815552">"
+        Que mais de 85% dos fundos não superam seu benchmark no longo prazo, isso nós já sabemos.
+    </BLOCKquote>
+    <h3>Abreviações</h3>
+    <p>A tag &lt;abbr&gt; é usada para mostrar o significado das abreviações, quando o cursor <br>
+    esta emcima do texto, como no exemplo: <br>
+    Para a criação de sites é necessário que se use pelo menos duas tecnoógias: 
+    <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr></p>
+    <h3>Texto invertido</h3>
+    <p>A tag &lt;bdo&gt; pode ser usada para organizar as letras de um texto ao contrario: <br>
+    <bdo dir="rtl">Estou aprendendo a programar e estou muito feliz</bdo> <br>
+    Não tem muita utilidade mas é interressante &#x1F60A</p>
+    <hr>
+    <h1 style="text-align: end;">Fim do capítulo</h1>
+    <p style="text-align: end;">
+        <a href="index.html">Voltar para a pagína inicial do módulo 01</a> <br>
+        <a href="cap09.html" rel="next">Siga para o Cap 09</a>
+    </p>
+</body>
+</html>
